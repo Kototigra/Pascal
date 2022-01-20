@@ -92,15 +92,17 @@ export const editRestaurant = (restaurantData) => {
 }
 
 export const THUNK_editRestaurant = (payload, restId) => async (dispatch) => {
-  const response = await fetch('http://localhost:3001/api/', {
+  const response = await fetch(`${process.env.REACT_APP_API_URL}/restaurants/edit`, {
     method: "PUT",
     headers: {
       'Content-Type': 'application/json'
     },
     credentials: 'include',
-    body: JSON.stringify(payload)
+    body: JSON.stringify({payload, restId})
   })
   const restaurant = await response.json()
+  console.log('***********', payload, '*********' )
+  console.log(restaurant)
   dispatch(editRestaurant(restaurant))
 }
 

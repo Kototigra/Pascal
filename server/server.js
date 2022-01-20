@@ -1,6 +1,8 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
+const path = require('path')
+const fileUpload = require('express-fileupload');
 const session = require('express-session')
 const FileStore = require('session-file-store')(session);
 const authRouter = require('./routes/auth.router')
@@ -11,13 +13,13 @@ const { userRouter } = require("./routes/user.router");
 
 const PORT = process.env.PORT ?? 3002;
 
-const fileUpload = require('express-fileupload');
 // const cloudinary = require('cloudinary').v2; // get api key https://cloudinary.com/users/register/free and add to .env CLOUDINARY_URL=cloudinary://my_key:my_secret@my_cloud_name
 
 // const app = express();
 
 // app.use(express.static(`${process.env.PWD}/public`));
 app.use(fileUpload());
+app.use(express.static(path.join(process.env.PWD, 'public')))
 
 // const uploadsDir = `http://localhost:3002/public/uploads`;
 

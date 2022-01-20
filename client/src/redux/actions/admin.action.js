@@ -1,4 +1,4 @@
-import {GET_ADMIN_INFO} from "../types/admin.types";
+import { GET_ADMIN_INFO} from "../types/admin.types";
 
 
 export const getAdmin = (user) => ({
@@ -16,3 +16,6 @@ export const checkAuthAdmin = () => async (dispatch) => {
         dispatch(getAdmin(admin))
     }
 }
+
+//////
+

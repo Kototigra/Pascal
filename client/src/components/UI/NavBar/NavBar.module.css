@@ -1,31 +1,63 @@
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
     align-items: center;
     background-image: url("https://cdn.pixabay.com/photo/2017/04/29/20/57/pub-2271549_1280.jpg");
     overflow: hidden;
-    margin-bottom: 30px;
     height: 130px;
 }
 
 .home-link {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 30px;
-    font-family: fantasy;
-    font-weight: 900;
-    letter-spacing: 1px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 50px;
+  font-family: fantasy;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-left: 50px;
+}
+
+
+a:active {
+  outline: none;
+  color: white;
+}
+a:visited{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  text-decoration: none;
 }
 
 .other-link {
-    display: block;
-    color: white;
-    text-align: end;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
+  display: block;
+  color: white;
+  text-align: end;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  /* border: 1px solid black; */
+  border-radius: 3px;
+  background-color: rgba(252, 122, 0, 0.5);
+   box-shadow: 0 10px 25px rgb(0 0 0 / 0.7);
+  margin-right: 20px;
+  width: 150px;
+  height: 60px;
+  text-align: center;
+}
+
+.wrapper_sign {
+  display: flex;
+  margin-right: 50px;
+}
+
+.wrapper_filters {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
 }

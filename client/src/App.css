@@ -20,6 +20,14 @@ ul, li {
   list-style: none; /* Убираем оформление списков */
 }
 
+input:focus {
+  outline: none;
+}
+
+select:active, select:focus {
+  outline: none;
+}
+
 html, body {
   height: 100%;
 }
@@ -29,9 +37,18 @@ html, body {
 }
 
 .App {
-  background-image:
+  overflow: hidden;
+}
+
+.main-back {
+  background:
     url(https://cdn.pixabay.com/photo/2016/07/30/20/52/vintage-1557993_1280.jpg);
-  height: inherit;
+  min-height: 813px;
+  padding: 50px 0 70px 0;
+}
+
+.background__navbar {
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 /* ------- main-page -------- */
@@ -69,6 +86,7 @@ input{
   padding: 5px;
   color: white;
   font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.45);
 }
 
 .rest-card:hover {
@@ -85,7 +103,3 @@ input{
   border-radius: 7px;
 }
 
-/* ------- XXX something -------- */
-
-
-/* ------- XXX something -------- */

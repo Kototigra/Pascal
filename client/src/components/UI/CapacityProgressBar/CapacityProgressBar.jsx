@@ -6,7 +6,6 @@ export default function CapacityProgressBar(props) {
     return (
       <div className={classes.containerStyles}>
         <div className={classes.fillerStyles} style={{ width: `${completed}%`, backgroundColor: bgcolor }}>
-          <span className={classes.labelStyles} >{`${completed}%`}</span>
         </div>
       </div>
     );

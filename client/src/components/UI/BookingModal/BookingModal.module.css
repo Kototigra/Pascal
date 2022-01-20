@@ -11,9 +11,9 @@
 
 .modalContent {
   padding: 40px;
-  background: rgb(255, 236, 201);
+  background: rgb(235, 207, 155);
   border-radius: 15px;
-  width: 400px;
+  width: 420px;
   display: flex;
   flex-direction: column;
   align-items: center;

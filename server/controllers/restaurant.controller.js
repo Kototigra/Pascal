@@ -250,6 +250,15 @@ const delReservationToDB = async (req, res) => {
 
 }
 
+//katya edit
+const editRestProfile = async(req,res) => {  
+  const {title, categoryId, cuisineId, avarageCoast, capacity, city, street, building} = req.body.payload
+  const result = await Restaurant.update({title, categoryId, cuisineId, avarageCoast, capacity}, {where: {id: req.body.restId}})
+  const adress = await Adress.update({city, street, building}, {where: {restaurantId: req.body.restId}})
+  const restik = await Restaurant.findByPk(req.body.restId)   
+  res.json(restik)
+}
+
 module.exports = {
   getAllRestaurantSearch,
   getCurrentRestaurant,
@@ -260,5 +269,6 @@ module.exports = {
   minusReservation,
   getAllRestaurantsApp,
   addReservationToDB,
-  delReservationToDB
+  delReservationToDB,
+  editRestProfile
 }

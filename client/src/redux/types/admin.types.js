@@ -1,1 +1,4 @@
 export const GET_ADMIN_INFO = 'GET_ADMIN_INFO'
+export const ADD_INCIDENT = 'ADD_INCIDENT'
+export const GET_INCIDENTS = 'GET_INCIDENTS'
+export const SET_INCIDENTS = 'SET_INCIDENTS'

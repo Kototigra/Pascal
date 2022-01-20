@@ -8,4 +8,5 @@ authRouter.post('/admin', authController.signUpAdmin)
 authRouter.post('/signin', authController.signIn)
 authRouter.get('/signout', authController.signOut)
 authRouter.get('/check', authController.checkAuth)
+authRouter.post('/upload', authController.upload)
 module.exports = authRouter

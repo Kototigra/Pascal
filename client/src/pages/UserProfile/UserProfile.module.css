@@ -1,13 +1,63 @@
 .container {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: baseline;
-    overflow: hidden;
-    /*background-image: url("https://st2.depositphotos.com/3542901/7910/i/950/depositphotos_79108092-stock-photo-customer-at-restaurant-blur-background.jpg");*/
-
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: baseline;
+  overflow: hidden;
 }
 
 .text {
-    font-family: "Times New Roman"
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.info__item {
+  padding: 0;
+  margin: 0;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.user-card {
+  border: 2px solid rgb(255, 173, 126);
+  border-radius: 7px;
+  padding: 50px;
+  color: white;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.user-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px #dfb5a9;
+}
+
+.btnCancelReserv {
+  background: #b44511;
+  width: 150px;
+  color: white;
+  margin: 0 auto;
+}
+
+.info__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info__wrapper ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.info__wrapper li {
+  margin: 10px 0;
 }

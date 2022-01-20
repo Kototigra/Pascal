@@ -4,7 +4,8 @@ const initialState = () => {
     restaurant: {},
     rests: [],
     reservation: {},
-    searchInput: ''
+    searchInput: '',
+    incident: []
   };
 
   return state;
