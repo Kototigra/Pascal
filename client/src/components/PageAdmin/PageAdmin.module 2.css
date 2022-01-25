@@ -1,0 +1,71 @@
+.form{
+  padding: 0 20px;
+}
+
+.form__title{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 50px;
+
+}
+
+
+.rest__info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 22px;
+
+}
+
+.foto__info{
+  width: 200px;
+  border: 1px solid #eee;
+  
+
+}
+
+.order__info{
+  width: 40%;
+}
+
+.btn__edit{
+  width: 300px;
+  
+}
+
+.ul__info{
+  padding: 0;
+}
+
+.btn__count{
+    width: 120px;
+    margin: 10px 10px 0 0  ;
+
+}
+
+.edit__form{
+display: flex;
+flex-direction: column;
+max-width: 300px;
+margin: 0 auto;
+gap: 15px;
+}
+
+.edit{
+
+
+}
+
+.edit__col{
+  display: flex;
+  align-items: center;
+
+  gap: 30px;
+  justify-content: center;
+}
+
+.edit__title{
+  text-align: center;
+}

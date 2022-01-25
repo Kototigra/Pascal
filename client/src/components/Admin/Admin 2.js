@@ -1,37 +1,18 @@
-import React, { useState } from "react"
+import { useState } from "react"
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router";
 import { signUpAdmin } from "../../redux/actions/userinfo.action";
 import classes from './Admin.module.css'
-import Selector from "../UI/Selector/Selector";
 
 function Admin() {
-
-  const [options, setOptions] = useState([
-    { value: '1', name: 'Bar' },
-    { value: '2', name: 'Restaurant' },
-    { value: '3', name: 'Coffee shop' },
-    { value: '4', name: 'Cafe' },
-    { value: '5', name: 'Burgers' },
-  ])
-
-  const [items, setItems] = useState([
-    { value: '1', name: 'Italian' },
-    { value: '2', name: 'French' },
-    { value: '3', name: 'Japanese' },
-    { value: '4', name: 'Irish' },
-    { value: '5', name: 'Russian' },
-    { value: '5', name: 'Belgian' }
-  ])
-
 
   const [userAdminSignUp, setUserAdminSignUp] = useState({
     name: '',
     email: '',
     password: '',
     title: '',
-    category: '',
-    cuisine: '',
+    categoryId: '',
+    cuisineId: '',
     avarageCoast: '',
     capacity: '',
     city: '',
@@ -68,29 +49,13 @@ function Admin() {
       <div className={classes.form__row}>
         <div className={classes.form__col}>
           <input onChange={changeHandler} placeholder='title' name="title" value={userAdminSignUp.title} type="text" />
-          {/*<input onChange={changeHandler} placeholder='category' name="categoryId" value={userAdminSignUp.categoryId} type='text' />*/}
+          <input onChange={changeHandler} placeholder='categoryId' name="categoryId" value={userAdminSignUp.categoryId} type='number' />
 
-          {/*<input onChange={changeHandler} placeholder='cuisine' name="cuisineId" value={userAdminSignUp.cuisineId} type='text' />*/}
-          <select value={userAdminSignUp.categoryId ? userAdminSignUp.categoryId : 1}
-
-                  onChange={changeHandler} placeholder='category' name="categoryId"
-          >
-            {options.map(option =>
-                <option key={option.value} value={option.value}>{option.name}</option>
-            )}
-          </select>
-          <select value={userAdminSignUp.cuisineId ? userAdminSignUp.cuisineId : 1}
-
-                  onChange={changeHandler} placeholder='cuisine' name="cuisineId"
-          >
-            {items.map(item =>
-                <option key={item.value} value={item.value}>{item.name}</option>
-            )}
-          </select>
-          <input onChange={changeHandler} placeholder='average cost' name="avarageCoast" value={userAdminSignUp.avarageCoast} type='number' />
+          <input onChange={changeHandler} placeholder='cuisineId' name="cuisineId" value={userAdminSignUp.cuisineId} type='number' />
+          <input onChange={changeHandler} placeholder='avarageCoast' name="avarageCoast" value={userAdminSignUp.avarageCoast} type='number' />
         </div>
         <div className={classes.form__col}>
-          <input onChange={changeHandler} placeholder='capacity' name="capacity" value={userAdminSignUp.capacity} type='text' />
+          <input onChange={changeHandler} placeholder='capacity' name="capacity" value={userAdminSignUp.capaciti} type='text' />
           <input onChange={changeHandler} placeholder='city' name="city" value={userAdminSignUp.city} type='text' />
           <input onChange={changeHandler} placeholder='street' name="street" value={userAdminSignUp.street} type='text' />
           <input onChange={changeHandler} placeholder='building' name="building" value={userAdminSignUp.building} type='text' />
@@ -98,7 +63,7 @@ function Admin() {
         <div className={classes.form__col}>
           <form>
             <div className={classes.form__group}>
-              <label htmlFor="uploadInput">File uploading</label>
+              <label htmlFor="uploadInput">Загрузка файлов</label>
               <input type="file" onChange={changeHandler} className="form-control-file" name="image" value={userAdminSignUp.image} id="uploadInput" />
             </div>
           </form>
@@ -106,7 +71,7 @@ function Admin() {
       </div>
 
       <div className={classes.form__btn_wrapper}>
-        <button onClick={submitHandler} >Sign up</button>
+        <button onClick={submitHandler} >Зарегистрироваться</button>
       </div>
     </div>
   )

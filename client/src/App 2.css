@@ -1,0 +1,56 @@
+/* ------- Обнуление стилей -------- */
+
+* {
+  padding: 0;
+  margin: 0;
+  /* border-box говорит браузеру учитывать любые границы и внутренние отступы
+  в значениях, которые вы указываете в ширине и высоте элемента */
+  box-sizing: border-box;
+}
+p {
+  margin-bottom: 0;
+}
+a {
+  text-decoration: none; /* Убираем подчеркивание у ссылок */
+}
+ul, li {
+  list-style: none; /* Убираем оформление списков */
+}
+
+
+/* ------- main-page -------- */
+
+.main-page__container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+button{
+  min-width: 20px;
+  width: 100%;
+  outline: 0;
+  /* border: 2px solid teal; */
+  border: 0;
+  border-radius: 5px;
+  background-color: rgb(116, 173, 173);
+  padding: 5px 5px;
+color: #fff; 
+}
+
+input{
+  max-width: 250px;
+  padding: 3px 5px;
+  border: 0;
+  border-bottom: 1px solid #333;
+}
+/* ------- XXX page -------- */
+
+
+
+/* ------- XXX something -------- */
+
+
+
+/* ------- XXX something -------- */
