@@ -1,21 +1,23 @@
 .form{
-  padding: 0 20px;
+
+  display: flex;
+  justify-content: space-around;
 }
 
 .form__title{
-  text-align: center;
+  text-align: end;
   text-transform: uppercase;
   font-weight: 300;
   margin-bottom: 50px;
+  color: white;
+  padding-right: 152px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 
 }
 
-
 .rest__info{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  font-size: 22px;
+  font-size: 18px;
+  width: 33%;
 
 }
 
@@ -27,50 +29,154 @@
 }
 
 .order__info{
-  width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 .btn__edit{
-  width: 300px;
+  width: 250px;
   
 }
 
 .ul__info{
   padding: 0;
+  color: white;
 }
 
 .btn__count{
-    width: 120px;
+    width: 250px;
     margin: 10px 10px 0 0  ;
+    height: 38px;
 
 }
 
 .edit__form{
-display: flex;
-flex-direction: column;
-max-width: 300px;
-margin: 0 auto;
-gap: 15px;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+  gap: 15px;
 }
 
-.edit{
 
-
-}
 
 .edit__col{
   display: flex;
   align-items: center;
+  /* justify-content: center; */
 
-  gap: 30px;
-  justify-content: center;
+  color: white;
 }
 
 .edit__title{
   text-align: center;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.img__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+
 }
 
 .img__rest{
-  width: 300px;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.booked__tables {
+  color: white
+}
+
+.img__label {
+  color: white
+}
+
+.img__input {
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.edit__col p {
+  width: 130px;
+}
+
+.edit__col input {
+  width: 130px;
+  /* border-bottom: none; */
+}
+
+.send__btn {
+  max-width: 160px;
+  height: 38px;
+}
+
+.booking_and_photo {
+  width: 33%;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: -8px;
+}
+
+
+/* .wrapper {
+  display: flex;
+  flex-direction: row;
+
+} */
+
+.img__input::-webkit-file-upload-button {
+  visibility: hidden;
+
+}
+.img__input::before{
+  content: 'Select some files';
+  color: black;
+  display: inline-block;
+  background: #FFE5B4;
+  border: 1px solid #FFE5B4;
+  border-radius: 5px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  height: 38px;
+  width: 246px;
+  font-weight: 400;
+  font-size: inherit;
+  text-align: center;
+}
+.img__label{
+  /* text-align: center; */
+}
+.non_active{
+  display: none;
+}
+.active{
+  display: block;
+}
+.order__info_form button{
   
+}
+.send__btn1{
+  width: 250px;
+  height: 38px;
+}
+.form__wrapper{
+  border: 2px solid rgb(255, 173, 126);
+  padding: 70px 70px 70px 70px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+
 }

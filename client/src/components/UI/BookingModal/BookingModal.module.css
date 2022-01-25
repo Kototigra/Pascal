@@ -11,7 +11,9 @@
 
 .modalContent {
   padding: 40px;
-  background: rgb(235, 207, 155);
+  /* background: rgb(0 151 137 / 61%); */
+  background: rgb(2 112 102 / 76%);
+  /* background: rgb(235, 207, 155); */
   border-radius: 15px;
   width: 420px;
   display: flex;

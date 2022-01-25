@@ -44,10 +44,9 @@ export const allRestByCoord = (coord) => async (dispatch) => {
   })
 }
 
-// ****** Получение всех ресторанов ******
+
 export const THUNK_getAllRestaurantsFromDB = () => async (dispatch) => {
   const response = await axios.get(`${process.env.REACT_APP_API_URL}/restaurants/allrests`);
-  // console.log('ACTION All Restaurants ----->', response.data);
 
   dispatch({
     type: GET_ALL_RESTAURANTS_APP,

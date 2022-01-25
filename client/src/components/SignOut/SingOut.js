@@ -9,7 +9,6 @@ function SignOut() {
 const all = useSelector(state => state)
   function deleteUser() {
     dispatch(signOut())
-console.log(all);
   }
 
   return (

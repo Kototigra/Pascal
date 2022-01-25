@@ -53,7 +53,7 @@ export default function RestaurantForm({ bookTableHandler, restaurantId }) {
       <div className={classes.form__button}>
         <ButtonCreate
           onClick={createNewbooking}
-          btnColor={'#ff9800'}
+          btnColor={'#b44511'}
         >
           Complete reservation
         </ButtonCreate>

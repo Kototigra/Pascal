@@ -45,8 +45,6 @@ export const addReservation = (updatedBookedTables) => {
 
 export const THUNK_minusReservationToDB = (payload) => async (dispatch) => {
   const { restaurantId } = payload;
-  console.log(payload);
-  console.log(restaurantId);
   const response = await axios.put(`${process.env.REACT_APP_API_URL}/restaurants/${Number(restaurantId)}/minus`)
   const updatedBookedTablesFromDB = response.data;
   dispatch(addReservation(updatedBookedTablesFromDB));
@@ -56,23 +54,13 @@ export const THUNK_minusReservationToDB = (payload) => async (dispatch) => {
 
 export const THUNK_addReservationToDBAdmin = (payload) => async (dispatch) => {
   const { restaurantId } = payload;
-  console.log('PPPPP',payload);
-  console.log('PPPPP2',restaurantId);
   const response = await axios.put(`${process.env.REACT_APP_API_URL}/restaurants/${Number(restaurantId)}/reservation`)
-  // const response = await axios.put(`${process.env.REACT_APP_API_URL}/restaurants/${Number(restaurantId)}/newReservation`,
-  //     {},
-  //     {
-  //       withCredentials: true
-  //     })
   const updatedBookedTablesFromDB = response.data;
   dispatch(addReservation(updatedBookedTablesFromDB));
 }
 
 export const THUNK_addReservationToDB = (payload) => async (dispatch) => {
   const { restaurantId } = payload;
-  console.log('PPPPP',payload);
-  console.log('PPPPP2',restaurantId);
-  // const response = await axios.put(`${process.env.REACT_APP_API_URL}/restaurants/${Number(restaurantId)}/reservation`)
   const response = await axios.put(`${process.env.REACT_APP_API_URL}/restaurants/${Number(restaurantId)}/newReservation`,
       {},
       {
@@ -101,18 +89,13 @@ export const THUNK_editRestaurant = (payload, restId) => async (dispatch) => {
     body: JSON.stringify({payload, restId})
   })
   const restaurant = await response.json()
-  console.log('***********', payload, '*********' )
-  console.log(restaurant)
   dispatch(editRestaurant(restaurant))
 }
 
-// ****** Получение адресов всех ресторанов ******
-//добавила Катя
 export const allRestaurants = () => async (dispatch) => {
-  // console.log('***')
+  
   const response = await axios.get(`${process.env.REACT_APP_API_URL}/restaurants/map`)
   const allRest = await response.data
-  // console.log('allRest', allRest.aresses.map(el => ({type:'Point', coordinates: [el.latitude, el.longitude]})))
   dispatch({
     type: GET_ALL_RESTAURANTS,
     payload: allRest.aresses.map(el => ({ type: 'Point', coordinates: [el.latitude, el.longitude] }))

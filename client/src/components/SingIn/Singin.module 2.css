@@ -1,0 +1,29 @@
+.form{
+  padding: 0 20px;
+}
+
+.form__box{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 40px;
+
+}
+
+.form__box input{
+  padding: 3px 5px;
+  border: 0;
+  border-bottom: 1px solid #333;
+}
+
+.form__title{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.form__btn{
+  max-width: 100px;
+  
+}

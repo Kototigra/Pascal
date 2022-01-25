@@ -44,7 +44,7 @@ const UserCard = ({userDataFromState}) => {
                           <li>Time of your booking: {el?.createdAt?.slice(11, 16)}</li>
                         </ul>
                       </div>
-                        <button className={classes.btnCancelReserv} type="button" onClick={ (e) => deleteReservationHandler(e, el.id)}>Cancel reserv</button>
+                        <button className={classes.btnCancelReserv} type="button" onClick={ (e) => deleteReservationHandler(e, el.id)}>Cancel reservation</button>
                     </li> )}
             </ul>
             <ToastContainer position="top-right"

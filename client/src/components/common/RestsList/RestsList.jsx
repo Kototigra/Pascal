@@ -21,7 +21,6 @@ const RestsList = () => {
 
     return (
         <div className={classes.box}>
-          <h2 className={classes.listTitle}>List of restaurants on the map</h2>
           {rests &&
             rests.map(rest => (
               <Link

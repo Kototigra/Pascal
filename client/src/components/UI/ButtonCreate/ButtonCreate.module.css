@@ -6,6 +6,7 @@
   font-weight: bold;
   background: #fdba00;
   /* border: 2px solid #fdba00; */
-  border-radius: 7px;
+  border-radius: 9px;
   cursor: pointer;
+  color: white;
 }

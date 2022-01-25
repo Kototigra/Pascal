@@ -1,0 +1,9 @@
+.btnCreate {
+  padding: 5px 15px;
+  color: #6868ac;
+  font-size: 14px;
+  background: transparent;
+  border: 2px solid #6868ac;
+  border-radius: 7px;
+  cursor: pointer;
+}

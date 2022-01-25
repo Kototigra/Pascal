@@ -53,6 +53,7 @@ export default function Restaurant() {
           <ButtonCreate
             type="button"
             onClick={()=> setModal(true)}
+            btnColor={'#b44511'}
           >
             Book a table
           </ButtonCreate>

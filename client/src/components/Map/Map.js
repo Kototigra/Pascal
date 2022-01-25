@@ -56,7 +56,7 @@ const Map = () => {
 
   return (
     <div className="main__map ymaps-layers-pane">
-      <div style={{ width: '600px', height: '580px', marginTop: '10px', borderRadius: '7px'}} id="map" />
+      <div style={{ width: '600px', height: '580px', borderRadius: '7px'}} id="map" />
     </div>
   )
 }

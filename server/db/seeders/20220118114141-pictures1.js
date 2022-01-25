@@ -12,6 +12,12 @@ const pictures = [
     updatedAt: '2022-01-16 21:30:24.393 +0300',
   },
   {
+    path: 'https://cdn.pixabay.com/photo/2021/04/22/02/36/barista-6197867_1280.jpg',
+    restaurantId: 1,
+    createdAt: '2022-01-16 21:30:24.393 +0300',
+    updatedAt: '2022-01-16 21:30:24.393 +0300',
+  },
+  {
     path: 'https://cdn.pixabay.com/photo/2018/05/17/00/17/bar-3407484_1280.jpg',
     restaurantId: 2,
     createdAt: '2022-01-16 21:30:24.393 +0300',
@@ -30,7 +36,7 @@ const pictures = [
     updatedAt: '2022-01-16 21:30:24.393 +0300',
   },
   {
-    path: 'https://cdn.pixabay.com/photo/2016/11/30/14/08/cafe-1872888_1280.jpg',
+    path: 'https://cdn.pixabay.com/photo/2014/12/15/14/05/salad-569156_960_720.jpg',
     restaurantId: 4,
     createdAt: '2022-01-16 21:30:24.393 +0300',
     updatedAt: '2022-01-16 21:30:24.393 +0300',
@@ -84,11 +90,18 @@ const pictures = [
     updatedAt: '2022-01-16 21:30:24.393 +0300',
   },
   {
-    path: 'https://cdn.pixabay.com/photo/2021/04/22/02/36/barista-6197867_1280.jpg',
-    restaurantId: 1,
+    path: 'https://cdn.pixabay.com/photo/2016/11/29/05/07/breads-1867459_1280.jpg ',
+    restaurantId: 13,
     createdAt: '2022-01-16 21:30:24.393 +0300',
     updatedAt: '2022-01-16 21:30:24.393 +0300',
   },
+  {
+    path: 'https://cdn.pixabay.com/photo/2019/07/02/19/37/pub-4312996_960_720.jpg',
+    restaurantId: 14,
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  },
+
 ]
 
 module.exports = {

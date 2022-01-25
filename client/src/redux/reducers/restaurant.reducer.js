@@ -17,7 +17,6 @@ export const restaurantReducer = (state = initialState, action) => {
 
     // katya was here
     case GET_ALL_RESTAURANTS:
-      // console.log('---------____',action.payload)
       return action.payload
 
     default:

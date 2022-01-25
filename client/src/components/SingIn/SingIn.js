@@ -7,7 +7,6 @@ import classes from './Singin.module.css'
 
 function SingIn() {
 const allState = useSelector(state => state)
-// console.log(allState);
   const [inputValue, setInputValue] = useState({
     email: '',
     password: '',
@@ -39,7 +38,9 @@ const allState = useSelector(state => state)
           <input onChange={changeHandler} name="email" value={inputValue.email} placeholder='email' type="email" />
           <input onChange={changeHandler} name="password" value={inputValue.password} placeholder='password' type='password' />
         </div>
-        <button className={classes.form__btn} onClick={submitHandler}>Sign in</button>
+        <div className={classes.form__btnWrapper}>
+          <button className={classes.form__btn} onClick={submitHandler}>Sign in</button>
+        </div>
       </div>
 
     </MyModel>

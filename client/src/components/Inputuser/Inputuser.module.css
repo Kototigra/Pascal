@@ -23,6 +23,10 @@
   margin-bottom: 20px;
 }
 
+.form__btnWrapper {
+  text-align: center;
+}
+
 .form__btn{
   max-width: 100px;
 }
